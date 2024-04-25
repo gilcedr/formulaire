@@ -132,7 +132,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         try{
 
             mysqli_query($conn, $sql);
-            echo "";
+            echo "SUCCESS";
         }
         catch(mysqli_sql_exception){
             echo " ";
