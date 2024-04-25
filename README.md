@@ -15,5 +15,12 @@ Requis pour ça compréhension:
 
 
 > Pour le Run sur linux :
-> Rassurer vous d'avoir installer le php, php -v et que tous ces fichiers sont tous dans le repertoire /var/www/html
-> Sur un Windows plus facile vous télechargez juste Wampeserver vous mettez les fichiers dans wamp/wwww (cliquue droit sur Wamp et ouvrir à l'emplacement du fichier)
+> Rassurer vous d'avoir installer le php, php -v et que tous ces fichiers sont tous dans le repertoire /var/www/html pour des serveurs comme nginx rassurer vs d'avoir la bonne version du fast_cgi dans
+> /etc/nginx/sites-available/default pour vérifier sa version php -v la version doit correspondre à la ligne du fichier config de son fpm ex php8.1-fpm selon ma version  :
+> apt install mariadb-server
+> apt install nginx
+>  sudo apt install  php−fpm php−mysql
+> nginx -t (pr voir si le serveur est ok après ça)
+> le redemarrer : systemctl restart nginx
+==========================================
+> Sur un Windows plus facile vous télechargez juste Wampeserver via google et liveserver depuis vscode ou autre éditeurvous mettez les fichiers dans wamp/wwww (cliquue droit sur Wamp et ouvrir à l'emplacement du fichier)
